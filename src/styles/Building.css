@@ -1,0 +1,84 @@
+.building {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 1000px;
+    height: 600px;
+    background-color: #eeeeee;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex; /* Add this line */
+  }
+
+  .building-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  
+  .floor {
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 1px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .floor-name {
+    z-index: 0;
+    text-align: right;
+    margin-right: 5px;
+    width: 100px;
+    font-size: 11px;
+  }
+  
+  .elevator-shaft {
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    margin: 0.1;
+    margin-top: 0.1;
+    background-color: white;
+    border: 1px solid #eeeeee;
+  }
+
+  .shafts-container {
+    z-index: 1;
+    display: flex;
+    margin-left: 5px;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    position: absolute;
+    
+  }
+  
+  .shaft {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(red, green, blue, 0);
+    margin-top: 50px;
+    height: 500px;
+    width: 100px;
+    z-index: 1;
+    
+  }
+  
+  svg {
+    height: 10%;
+    width: 20%;
+    align-self: flex-end;
+  }

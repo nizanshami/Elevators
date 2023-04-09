@@ -1,0 +1,11 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  height: 50vh;
+}
