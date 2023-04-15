@@ -1,11 +1,25 @@
 import React from "react";
 import { useEffect, useState } from "react";
-
-function Elevator({Color}) {
+import elevatorSound from '../assets/elevatorSound.wav'
+function Elevator({state}) {
     const [color, setColor] = useState('black');    
+    
     useEffect(() => {
-        setColor(Color);
-    }, [Color])
+      if(state === 'occupied'){
+        setColor('red');
+        setTimeout(() => {
+          new Audio(elevatorSound).play();
+          setColor('green');
+          setTimeout(() => {
+            setColor('black');
+          }, 2000);
+        }, 4000);
+      }
+      
+      if(state === 'ready'){
+        setColor('black');
+      }
+          }, [state])
     
   return (
     <svg 
